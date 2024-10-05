@@ -1,0 +1,5 @@
+gradio
+depth_pro
+numpy
+matplotlib
+Pillow
