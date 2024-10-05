@@ -1,7 +1,7 @@
-<h1 align="center">Web UI for Depth-Pro Depth Estimation</h1>
+<h1 align="center">Web UI for Depth-Pro, Sharp Monocular Metric Depth</h1>
 
 <p align="center">
-  <img src="./demo.jpg" alt="Web UI for Depth-Pro Depth Estimation" />
+  <img src="./ui.jpg" alt="Web UI for Depth-Pro Depth Estimation" />
 </p>
 
 This project is a web UI for interactively estimating depth using the Depth Pro model. Users can easily upload images to generate and visualize depth maps through a simple Gradio interface.
