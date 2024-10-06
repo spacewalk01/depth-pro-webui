@@ -19,12 +19,20 @@ def predict_depth(image: Image.Image, auto_rotate: bool, remove_alpha: bool, mod
     # Run inference
     prediction = model.infer(loaded_image, f_px=f_px)
     depth = prediction["depth"].detach().cpu().numpy().squeeze()  # Depth in [m]
+
+    inverse_depth = 1 / depth
+    # Visualize inverse depth instead of depth, clipped to [0.1m;250m] range for better visualization.
+    max_invdepth_vizu = min(inverse_depth.max(), 1 / 0.1)
+    min_invdepth_vizu = max(1 / 250, inverse_depth.min())
+    inverse_depth_normalized = (inverse_depth - min_invdepth_vizu) / (
+            max_invdepth_vizu - min_invdepth_vizu
+    )
+
     focallength = prediction["focallength_px"].cpu().numpy()
 
     # Normalize and colorize depth map
     cmap = plt.get_cmap("turbo_r")
-    normalized_depth = (depth - depth.min()) / (depth.max() - depth.min())
-    color_depth = (cmap(normalized_depth)[..., :3] * 255).astype(np.uint8)
+    color_depth = (cmap(inverse_depth_normalized)[..., :3] * 255).astype(np.uint8)
 
     # Clean up temporary image
     os.remove(image_path)
