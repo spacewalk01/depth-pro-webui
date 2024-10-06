@@ -1,7 +1,7 @@
 <h1 align="center">Web UI for Depth-Pro</h1>
 
 <p align="center">
-  <img src="./ui.jpg" alt="Web UI for Depth-Pro Depth Estimation" />
+  <img src="./example.jpg" alt="Web UI for Depth-Pro Depth Estimation" />
 </p>
 
 Metric depth estimation determines real-world distances to objects in a scene from images. This repo provides a web UI that allows users to estimate metric depth and visualize depth maps by easily uploading images using the Depth Pro model through a simple Gradio UI interface.
