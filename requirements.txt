@@ -1,5 +1,5 @@
 gradio
-depth_pro
 numpy
 matplotlib
 Pillow
+git+https://github.com/apple/ml-depth-pro
