@@ -23,7 +23,7 @@ Metric depth estimation determines real-world distances to objects in a scene fr
    conda activate depth-pro
    ```
 
-2. **Clone this and install the required library as follows:**
+2. **Clone this repo and install the required library as follows:**
 
    ```bash
    git clone https://github.com/spacewalk01/depth-pro-webui.git
