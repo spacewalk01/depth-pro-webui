@@ -17,15 +17,7 @@ Metric depth estimation determines real-world distances to objects in a scene fr
    conda activate depth-pro
    ```
 
-2. **Clone the depth-pro repository:**
-
-   ```bash
-   git clone https://github.com/apple/ml-depth-pro.git
-   cd ml-depth-pro
-   pip install -e .
-   ```
-
-3. **Clone the web UI repository:**
+2. **Clone the web UI repository:**
 
    ```bash
    git clone https://github.com/spacewalk01/depth-pro-webui.git
@@ -33,9 +25,9 @@ Metric depth estimation determines real-world distances to objects in a scene fr
    pip install -r requirements.txt
    ```
 
-4. **Download the model:**
+3. **Download the model:**
 
-   Download the model from [depth_pro.pt](https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt) and place the file in a newly created `checkpoints` folder.
+   Download the model checkpoint [depth_pro.pt](https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt) and place it in the `checkpoints` folder.
 
 ### 🚀 Running the Application
 
