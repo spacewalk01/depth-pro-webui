@@ -1,5 +1,7 @@
 <h1 align="center">Web UI for Depth-Pro</h1>
 
+<a href='https://huggingface.co/spaces/selmee/depth-pro'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue'></a>
+
 <p align="center">
   <img src="./example.jpg" alt="Web UI for Depth-Pro Depth Estimation" />
 </p>
